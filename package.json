@@ -3,15 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-boost": "0.1.27",
+    "google-map-react": "^1.1.4",
+    "graphql": "14.1.1",
+    "graphql-tag": "2.10.1",
     "react": "^16.8.6",
+    "react-apollo": "2.4.1",
     "react-dom": "^16.8.6",
+    "react-google-maps": "^9.4.5",
     "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "cypress open",
+    "eject": "react-scripts eject",
+    "cypress:open":"cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,11 +28,9 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^3.2.0"
   }
 }
